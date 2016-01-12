@@ -9,12 +9,12 @@ The distillery code is split up into several repos:
 * <a href="https://github.com/joram/distillery-arduino">arduino</a>
 * <a href="https://github.com/joram/distillery-parts">parts (physical 3D parts)</a>
 
-## arduino repos
+## arduino
 <p>
 The arduino continuously polls the 6 temperature sensors, and stores the last 100 raw values. It will provide the raw data as json over serial when it receives the command `values`. It will provide the average values with the command `averages`.
 </p>
 
-## raspberrypi repos
+## raspberrypi
 <p>
 The raspberrypi provides a web interface to monitor the sensors and control the actuators. While it plugged in to the arduino it gets the temperature values from it over the serial connection.
 </p>
